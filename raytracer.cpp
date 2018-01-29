@@ -1,8 +1,3 @@
-// raytracer.cpp : Defines the entry point for the console application.
-//
-
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <GL/glut.h>
@@ -123,8 +118,6 @@ void shade_ray_diffuse(Ray *ray, Intersection *inter, Vect color)
 // same as shade_ray_diffuse(), but add specular lighting + shadow rays (i.e., full Phong illumination model)
 
 void shade_ray_local(Ray *ray, Intersection *inter, Vect color)
-{
-	// INSERT YOUR CODE HERE (EXTRA CREDITS FOR SHADOW RAY) 
 }
 
 //----------------------------------------------------------------------------
@@ -150,15 +143,9 @@ void shade_ray_recursive(int level, double weight, Ray *ray, Intersection *inter
 
 		if (surf->reflectivity * weight > minweight) {
 
-			// INSERT YOUR CODE HERE
-
 		}
 
-		// add refraction component to color
-
 		if (surf->transparency * weight > minweight) {
-
-			// INSERT YOUR CODE HERE (EXTRA CREDITS FOR REFRACTION)
 
 		}
 	}
